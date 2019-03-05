@@ -1,0 +1,17 @@
+<ion-view title="Home" id="page2">
+  <ion-content padding="true" class="has-header">
+    <div class="list card" id="home-card23" ng-repeat="feed in feeds">
+      <div style="margin: 0px; line-height: 0px; background-color: rgb(232, 235, 239); text-align: center;">
+          <!-- <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i> -->
+          <img ng-src="{{feed.url}}" style="width:100%" ui-sref="tabsController.eventDetails({ id: feed.id })">
+      </div>
+      <div class="item item-body" id="home-list-item-container3">
+          <div id="home-markdown4" style="margin-top:0px;color:#000000;">
+              <p>
+                  <strong>{{feed.name}}</strong>
+              </p>
+          </div>
+      </div>
+  </div>
+  </ion-content>
+</ion-view>

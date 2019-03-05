@@ -1,0 +1,9 @@
+<ion-view title="Department" id="page11">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="department-list4" ng-repeat="feed in feeds">
+      <ion-item id="department-list-item29" ui-sref="tabsController.eventDetails({ id: feed.id })">
+          <h2>{{feed.organier}}</h2>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

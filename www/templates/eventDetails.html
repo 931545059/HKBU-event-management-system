@@ -1,0 +1,27 @@
+<ion-view title="Event Details" id="page8">
+  <ion-content padding="true" class="has-header">
+    <div class="list card" id="eventDetails-card24">
+      <ion-item class="item-avatar" id="eventDetails-list-item17" >
+          <img ng-src="{{feeds.url}}">
+        <h2>{{feeds.name}}</h2>
+      </ion-item>
+      <div style="margin: 0px; line-height: 0px; background-color: rgb(232, 235, 239); text-align: center;">
+        <img ng-src="{{feeds.url}}" style="width:100%">
+      </div>
+      <div class="item item-body" id="eventDetails-list-item-container6">
+        <div id="eventDetails-markdown7" class="show-list-numbers-and-dots">
+            <p>
+                {{feeds.shortdiscription}}
+                <br>
+                <br>
+                {{feeds.fulldiscription}}
+            </p>
+        </div>
+      </div>
+      <div id="eventDetails-button-bar4" class="button-bar">
+        <button  id="eventDetails-button19" class="button button-assertive button-block" ng-click='register({{feeds.id}})'>Register</button>
+        <a ui-sref="tabsController.map()" id="eventDetails-button20" class="button button-positive button-block">Address</a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
